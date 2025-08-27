@@ -2,7 +2,7 @@
 
 SoilSense is a friendly, data-rich dashboard for monitoring soil health — tracking pH, moisture, and temperature — while offering straightforward, science-backed guidance and weather alerts. It blends the timeless wisdom of farming with the convenience of modern digital tools. No sugar-coating, just facts and functionality.
 
-
+------------------------------------------------------------------------------------------------------------------------
 
 ✨ **Features**
 
@@ -16,7 +16,7 @@ SoilSense is a friendly, data-rich dashboard for monitoring soil health — trac
  
  »» 🔄 Real-Time Updates – Reflects the latest sensor or data inputs
 
-
+------------------------------------------------------------------------------------------------------------------------
 
 🛠️ **Technology Stack**
 

@@ -1,5 +1,5 @@
 import { Tabs } from 'expo-router';
-import { Chrome as Home, ChartBar as BarChart3, FileText, Settings, Building2 } from 'lucide-react-native';
+import { Chrome as Home, ChartBar as BarChart3, FileText, Settings, Building2, Shield } from 'lucide-react-native';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function TabLayout() {
@@ -56,24 +56,32 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="crop-info" 
+        name="crop-info"
         options={{ 
-          title: t('Info. Related Crops'),
-          tabBarIcon: ({ size, color}) => (
-            <Settings size={size} colour={color} />
-        ),
-      }} 
-     />
+          title: 'Crop Info',
+          tabBarIcon: ({ size, color }) => (
+            <BarChart3 size={size} color={color} />
+          ),
+        }}
+      />
       <Tabs.Screen
         name="settings"
         options={{
           title: t('settings'),
-          tabBarIcon: ({ size, color}) => (
+          tabBarIcon: ({ size, color }) => (
             <Settings size={size} color={color} />
           ),
         }}
       />
+      <Tabs.Screen
+        name="admin-access"
+        options={{
+          title: 'Admin',
+          tabBarIcon: ({ size, color }) => (
+            <Shield size={size} color={color} />
+          ),
+        }}
+      />
     </Tabs>
-
   );
 }

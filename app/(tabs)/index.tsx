@@ -6,6 +6,7 @@ import PHMeter from '@/components/PHMeter';
 import MetricCard from '@/components/MetricCard';
 import RecommendationCard from '@/components/RecommendationCard';
 import AddPHModal from '@/components/AddPHModal';
+import WeatherWidget from '@/components/WeatherWidget';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const { width } = Dimensions.get('window');
@@ -58,6 +59,9 @@ export default function Dashboard() {
           <Text style={styles.sectionTitle}>{t('currentSoilPH')}</Text>
           <PHMeter value={currentPH} status={phStatus} color={phColor} />
         </View>
+
+        {/* Weather Widget */}
+        <WeatherWidget location="Ludhiana, Punjab" />
 
         {/* Metrics Grid */}
         <View style={styles.metricsContainer}>

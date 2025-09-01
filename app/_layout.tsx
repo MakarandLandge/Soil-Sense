@@ -3,7 +3,6 @@ import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { useFrameworkReady } from '@/hooks/useFrameworkReady';
 import { LanguageProvider } from '@/contexts/LanguageContext';
-import { FieldProvider } from '@/contexts/FieldContext';
 
 export default function RootLayout() {
   useFrameworkReady();
@@ -11,6 +10,8 @@ export default function RootLayout() {
   return (
     <LanguageProvider>
       <Stack screenOptions={{ headerShown: false }}>
+        <Stack.Screen name="(auth)" />
+        <Stack.Screen name="(admin)" />
         <Stack.Screen name="+not-found" />
       </Stack>
       <StatusBar style="auto" />

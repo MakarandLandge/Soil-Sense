@@ -2,17 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Alert } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { router } from 'expo-router';
-import { 
-  Database, 
-  Cloud, 
-  Users, 
-  BarChart3, 
-  Settings, 
-  LogOut,
-  Shield,
-  Activity,
-  TrendingUp
-} from 'lucide-react-native';
+import { Database, Cloud, Users, ChartBar as BarChart3, Settings, LogOut, Shield, Activity, TrendingUp } from 'lucide-react-native';
 import { databaseService } from '@/services/databaseService';
 
 export default function AdminDashboard() {

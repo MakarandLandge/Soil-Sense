@@ -2,16 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Alert } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { router } from 'expo-router';
-import { 
-  ArrowLeft, 
-  Plus, 
-  Database, 
-  Building2, 
-  BarChart3, 
-  Activity,
-  Trash2,
-  Edit3
-} from 'lucide-react-native';
+import { ArrowLeft, Plus, Database, Building2, ChartBar as BarChart3, Activity, Trash2, CreditCard as Edit3 } from 'lucide-react-native';
 import { databaseService } from '@/services/databaseService';
 
 export default function DatabaseManagement() {
